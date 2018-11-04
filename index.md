@@ -1,5 +1,4 @@
-Introduction {#introduction}
-============
+## Introduction
 
 Metadata for preservation, including descriptive metadata,
 administrative metadata, and technical metadata, supports the long-term
@@ -58,8 +57,7 @@ actionable metadata fields and narrative fields which may provide
 valuable contextual information for archivists but which cannot
 necessarily be parsed and acted upon by software.
 
-PREMIS Rights in Archivematica {#premis-rights-in-archivematica}
-==============================
+## PREMIS Rights in Archivematica
 
 Archivematica provides the three bases defined by PREMIS, and also
 allows the user to select either Donor or Policy as an implementation of
@@ -99,8 +97,7 @@ Practitioners*[^2]:
 > *termOfRestriction* semantic to be used the PREMIS output, rather than
 > the *termOfGrant*.
 
-PREMIS Implementation at the RAC {#premis-implementation-at-the-rac}
-================================
+## PREMIS Implementation at the RAC
 
 Historically, there have been two types of rights bases applied to
 objects ingested into the digital preservation system at the RAC: those
@@ -129,8 +126,7 @@ Dictionary*, as well as notes on value constraints as defined by the
 *Data Dictionary*, and, where applicable, Archivematica and local
 policy.
 
-Controlled Vocabularies and Standards {#controlled-vocabularies-and-standards}
--------------------------------------
+### Controlled Vocabularies and Standards
 
 Note that, as recommended by the *Data Dictionary* and enforced by
 Archivematica, all dates should be expressed according to ISO 8601. From
@@ -140,15 +136,14 @@ applies to many objects with different end dates. Additionally, statute
 and copyright jurisdiction values should be taken from ISO 3166 Country
 Codes.
 
-Act (rightsGranted) {#act-rightsgranted}
--------------------
+### Act (rightsGranted)
 
 While corresponding information about the donor agreement or policy may
 be relevant to include in a rights basis note, a permission/restriction
 should not be created if the permission/restriction expired before
 ingest into the digital preservation system.
 
-### Act {#act}
+#### Act
 
 > **PREMIS Rule:** The action the preservation repository is allowed to
 > take.
@@ -184,7 +179,7 @@ ingest into the digital preservation system.
 
 -   delete: remove from the repository
 
-### Restriction (restriction) {#restriction-restriction}
+#### Restriction (restriction)
 
 > **PREMIS Rule:** A condition or limitation on the act.
 >
@@ -203,7 +198,7 @@ ingest into the digital preservation system.
 > selected, Archivematica creates a *termOfRestriction* semantic unit
 > instead.
 
-### Term of Grant/Restriction (termOfGrant OR termOfRestriction) {#term-of-grantrestriction-termofgrant-or-termofrestriction}
+#### Term of Grant/Restriction (termOfGrant OR termOfRestriction)
 
 > **PREMIS Rule:** The time period for the permissions or restriction
 > granted.
@@ -217,7 +212,7 @@ ingest into the digital preservation system.
 > material. Therefore, start dates should not be before the creation of
 > the digital object.
 
-### Grant/Restriction Note (rightsGrantedNote) {#grantrestriction-note-rightsgrantednote}
+#### Grant/Restriction Note (rightsGrantedNote)
 
 > **PREMIS Rule:** Additional information about the permissions or
 > restrictions granted if a textual description is needed for further
@@ -236,10 +231,10 @@ ingest into the digital preservation system.
 > basis note (e.g., "The twenty-year embargo has expired for these
 > materials").
 
-Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
----------------------------------------
+### Basis: Copyright (copyrightInformation)
 
-### Copyright Status (copyrightStatus) {#copyright-status-copyrightstatus}
+
+#### Copyright Status (copyrightStatus)
 
 > **PREMIS Rule:** A coded designation for the copyright status of the
 > object at the time the Rights statement was recorded. Mandatory.
@@ -256,7 +251,7 @@ Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
 > The above values are from the controlled vocabulary suggested by the
 > *Data Dictionary* and implemented by Archivematica.
 
-### Copyright Jurisdiction (copyrightJurisdiction) {#copyright-jurisdiction-copyrightjurisdiction}
+#### Copyright Jurisdiction (copyrightJurisdiction)
 
 > **PREMIS Rule:** The country whose copyright laws apply. Mandatory.
 >
@@ -266,7 +261,7 @@ Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
 
 > The US would be the value for all current RAC use cases.
 
-### Copyright Determination Date (copyrightStatusDeterminationDate) {#copyright-determination-date-copyrightstatusdeterminationdate}
+#### Copyright Determination Date (copyrightStatusDeterminationDate)
 
 > **PREMIS Rule:** The date that the copyright status recorded in
 > *copyrightStatus* was determined.
@@ -274,7 +269,7 @@ Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
 > **Local Rule:** This is generally the date of creation of the PREMIS
 > rights statement.
 
-### Copyright Note (copyrightNote) {#copyright-note-copyrightnote}
+#### Copyright Note (copyrightNote)
 
 > **PREMIS Rule:** Additional information about the copyright status of
 > the object.
@@ -286,7 +281,7 @@ Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
 > *Work for hire - copyright term 120 years from date of creation.
 > Copyright held by the Rockefeller Foundation.*
 
-### Copyright Documentation Identifier (copyrightDocumentationIdentifier) {#copyright-documentation-identifier-copyrightdocumentationidentifier}
+#### Copyright Documentation Identifier (copyrightDocumentationIdentifier)
 
 > **PREMIS Rule:** A designation used to identify documentation
 > supporting the specified Rights granted according to copyright
@@ -300,7 +295,7 @@ Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
 > container, and elements within the container have been omitted as we
 > are not using them currently.)
 
-### Copyright Applicable Dates (copyrightApplicableDates) {#copyright-applicable-dates-copyrightapplicabledates}
+#### Copyright Applicable Dates (copyrightApplicableDates)
 
 > **PREMIS Rule:** The date range during which the particular copyright
 > applies or is applied to the content. This is distinct from
@@ -318,10 +313,10 @@ Basis: Copyright (copyrightInformation) {#basis-copyright-copyrightinformation}
 > domain at the time of its creation, record the date of creation for
 > the item.
 
-Basis: Donor (otherRightsInformation) {#basis-donor-otherrightsinformation}
+Basis: Donor (otherRightsInformation)
 -------------------------------------
 
-### Donor Documentation Identifier (otherRightsDocumentationIdentifier) {#donor-documentation-identifier-otherrightsdocumentationidentifier}
+#### Donor Documentation Identifier (otherRightsDocumentationIdentifier)
 
 > **PREMIS Rule:** A designation used to uniquely identify documentation
 > supporting the specified Rights within the repository system, when the
@@ -334,7 +329,7 @@ Basis: Donor (otherRightsInformation) {#basis-donor-otherrightsinformation}
 > is a container, and sub-elements within it have been omitted as we are
 > not using them currently.)
 
-### Donor Agreement Applicable Dates (otherRightsApplicableDates) {#donor-agreement-applicable-dates-otherrightsapplicabledates}
+#### Donor Agreement Applicable Dates (otherRightsApplicableDates)
 
 > **PREMIS Rule:** The date range during which the particular rights
 > applies or applied to the content. This is distinct from
@@ -347,7 +342,7 @@ Basis: Donor (otherRightsInformation) {#basis-donor-otherrightsinformation}
 > the end date should be recorded as "open." Otherwise, record the end
 > date specified in the agreement.
 
-### Donor Agreement Note (otherRightsNote) {#donor-agreement-note-otherrightsnote}
+#### Donor Agreement Note (otherRightsNote)
 
 > **PREMIS Rule:** Additional information about the rights of the
 > object.
@@ -358,10 +353,10 @@ Basis: Donor (otherRightsInformation) {#basis-donor-otherrightsinformation}
 > meeting minutes are restricted for 10 years), include this
 > information.
 
-Basis: Policy (otherRightsInformation) {#basis-policy-otherrightsinformation}
+Basis: Policy (otherRightsInformation)
 --------------------------------------
 
-### Policy Documentation Identifier (otherRightsDocumentationIdentifier) {#policy-documentation-identifier-otherrightsdocumentationidentifier}
+#### Policy Documentation Identifier (otherRightsDocumentationIdentifier)
 
 > **PREMIS Rule:** A designation used to uniquely identify documentation
 > supporting the specified Rights within the repository system, when the
@@ -374,7 +369,7 @@ Basis: Policy (otherRightsInformation) {#basis-policy-otherrightsinformation}
 > is a container, and sub-elements within it have been omitted as we are
 > not using them currently.)
 
-### Policy Applicable Dates (otherRightsApplicableDates) {#policy-applicable-dates-otherrightsapplicabledates}
+#### Policy Applicable Dates (otherRightsApplicableDates)
 
 > **PREMIS Rule:** The date range during which the particular rights
 > applies or applied to the content. This is distinct from
@@ -388,7 +383,7 @@ Basis: Policy (otherRightsInformation) {#basis-policy-otherrightsinformation}
 > content (that is recorded in the associated act); therefore, the end
 > date is "open" in most cases.
 
-### Policy Note (otherRightsNote) {#policy-note-otherrightsnote}
+#### Policy Note (otherRightsNote)
 
 > **PREMIS Rule:** Additional information about the rights of the
 > object.
@@ -409,10 +404,10 @@ Basis: Policy (otherRightsInformation) {#basis-policy-otherrightsinformation}
 > conducting an executive search, or in filling a professional position,
 > may also be restricted. *
 
-Basis: License (licenseInformation) {#basis-license-licenseinformation}
+Basis: License (licenseInformation)
 -----------------------------------
 
-### License Documentation Identifier (licenseDocumentationIdentifier) {#license-documentation-identifier-licensedocumentationidentifier}
+#### License Documentation Identifier (licenseDocumentationIdentifier)
 
 > **PREMIS Rule:** A designation used to uniquely identify documentation
 > supporting the specified rights granted by license within the
@@ -431,13 +426,13 @@ Basis: License (licenseInformation) {#basis-license-licenseinformation}
 > at this time. This may change in the future. (Note that this element
 > is a container, and sub-elements within it have been omitted.)
 
-### License Terms (licenseTerms) {#license-terms-licenseterms}
+#### License Terms (licenseTerms)
 
 > **PREMIS Rule:** Text describing the license or agreement by which
 > permission was granted. This could contain the actual text of the
 > license or agreement or a paraphrase or summary.
 
-### License Note (licenseNote) {#license-note-licensenote}
+#### License Note (licenseNote)
 
 > **PREMIS Rule:** Additional information about the license. Information
 > about the terms of the license should go in *licenseTerms*.
@@ -447,7 +442,7 @@ Basis: License (licenseInformation) {#basis-license-licenseinformation}
 > license, for example, if it is available online or embedded in the
 > object itself.
 
-### License Applicable Dates (licenseApplicableDates) {#license-applicable-dates-licenseapplicabledates}
+#### License Applicable Dates (licenseApplicableDates)
 
 > **PREMIS Rule:** The date range during which the license applies or is
 > applied to the content. This is distinct from *termOfGrant*, which
@@ -455,17 +450,17 @@ Basis: License (licenseInformation) {#basis-license-licenseinformation}
 > differ from the period of time the license, statute or other basis
 > applies to the content.
 
-Basis: Statute (statuteInformation) {#basis-statute-statuteinformation}
+Basis: Statute (statuteInformation)
 -----------------------------------
 
-### Statute Jurisdiction (statuteJurisdiction) {#statute-jurisdiction-statutejurisdiction}
+#### Statute Jurisdiction (statuteJurisdiction)
 
 > **PREMIS Rule:** The country or other political body enacting the
 > statute. The connection between the object and the rights granted is
 > based on jurisdiction. Values should be taken from a controlled
 > vocabulary. Mandatory.
 
-### Statute Citation (statuteCitation) {#statute-citation-statutecitation}
+#### Statute Citation (statuteCitation)
 
 > **PREMIS Rule:** An identifying designation for the statute.
 > Mandatory.
@@ -473,7 +468,7 @@ Basis: Statute (statuteInformation) {#basis-statute-statuteinformation}
 > **Local Rule**: Follow guidelines such as [*Introduction to Basic
 > Legal Citation*](https://www.law.cornell.edu/citation/).
 
-### Statute Determination Date (statuteInformationDeterminationDate) {#statute-determination-date-statuteinformationdeterminationdate}
+#### Statute Determination Date (statuteInformationDeterminationDate)
 
 > **PREMIS Rule:** The date that the determination was made that the
 > statute authorized the permission(s) noted. The permission in question
@@ -482,7 +477,7 @@ Basis: Statute (statuteInformation) {#basis-statute-statuteinformation}
 > context, and therefore the assessment, could change. For this reason
 > it can be important to record the date of the decision.
 
-### Statute Note (statuteNote) {#statute-note-statutenote}
+#### Statute Note (statuteNote)
 
 > **PREMIS Rule:** Additional information about the statute.
 >
@@ -492,7 +487,7 @@ Basis: Statute (statuteInformation) {#basis-statute-statuteinformation}
 > or other external text, link to it using
 > *statuteDocumentationIdentifier*.
 
-### Statute Documentation Identifier (statuteDocumentationIdentifier) {#statute-documentation-identifier-statutedocumentationidentifier}
+#### Statute Documentation Identifier (statuteDocumentationIdentifier)
 
 > **PREMIS Rule:** A designation used to uniquely identify documentation
 > supporting the specified rights granted by statute within the
@@ -505,23 +500,23 @@ Basis: Statute (statuteInformation) {#basis-statute-statuteinformation}
 > enforces it (role: application decree) or some addition text refining
 > the law by showing a real-world verdict (role: case law).
 
-#### Documentation Identifier Type (statuteDocumentationIdentifierType) {#documentation-identifier-type-statutedocumentationidentifiertype}
+##### Documentation Identifier Type (statuteDocumentationIdentifierType)
 
 > **PREMIS Rule:** A designation of the domain within which the statute
 > documentation identifier is unique.
 
-#### Documentation Identifier Value (statuteDocumentationIdentifierValue) {#documentation-identifier-value-statutedocumentationidentifiervalue}
+##### Documentation Identifier Value (statuteDocumentationIdentifierValue)
 
 > **PREMIS Rule:** The value of the *statuteDocumentationIdentifier*.
 
-#### Documentation Role (statuteDocumentationRole) {#documentation-role-statutedocumentationrole}
+##### Documentation Role (statuteDocumentationRole)
 
 > **PREMIS Rule:** A value indicating the purpose or expected use of the
 > documentation being identified. This information distinguishes the
 > purpose of the supporting documentation especially when there are
 > multiple documentation identifiers.
 
-### Statute Applicable Dates (statuteApplicableDates) {#statute-applicable-dates-statuteapplicabledates}
+#### Statute Applicable Dates (statuteApplicableDates)
 
 > **PREMIS Rule:** The date range during which the statute applies or is
 > applied to the content. This is distinct from *termOfGrant*, which
