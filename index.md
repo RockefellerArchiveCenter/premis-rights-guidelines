@@ -22,9 +22,9 @@ Archivematica provides the three bases defined by PREMIS, and also allows the us
 
 > Archivematica's designers decided early on to make \[the Restriction\]
 a more structured and limited field in order to both simplify the metadata entry process and to make the value machine-actionable to inform automated preservation or access decisions.
-> 
+
 > Thus the metadata template only allows one of three possible values to be selected: "Allow," "Disallow," and "Conditional," which enforces specific combinations and makes the information machine-actionable by the system. If the user selects "Allow," Archivematica automatically creates a *termOfGrant* semantic unit to capture information about the start and end dates of the grant; if either "Disallow" or "Conditional" is selected, Archivematica creates a *termOfRestriction* semantic unit instead. More importantly, specific combinations of values in *act* and *restriction* can be used to automate rules relating to processing and access. For example...if *act* is "Disseminate," an access system can be programmed to check whether *restriction* is "Allow," "Disallow," or "Conditional" and display or hide the digital object based on this information...
-> 
+
 > Note that a user can select "Conditional" as a value for *restriction*. This is to capture information about acts that can be carried out under certain circumstances. These circumstances should be specific in the *rightsGranted* semantic unit ("Grant/restriction note" in the metadata entry template). For example, the user might select "Publication" as the *act* and "Conditional" as the *restriction*, and add a note that permission to publish must be obtained from the copyright holder. As for "Disallow," if one selects "Conditional" in the *restriction,* this causes the *termOfRestriction* semantic to be used the PREMIS output, rather than the *termOfGrant*.
 
 [^1]: Library of Congress and PREMIS Editorial Committee, “PREMIS Data Dictionary for Preservation Metadata, Version 3.0 (Library of Congress).”
