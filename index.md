@@ -1,3 +1,7 @@
+---
+layout: docs
+title:  "Rockefeller Archive Center PREMIS Rights Statements Guidelines"
+---
 ## Introduction
 
 Metadata for preservation, including descriptive metadata, administrative metadata, and technical metadata, supports the long-term access to and use of electronic files. The primary metadata schema used for preservation metadata at the RAC is PREMIS (PREservation Metadata:
