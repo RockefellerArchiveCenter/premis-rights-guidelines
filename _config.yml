@@ -7,4 +7,6 @@ tags:
 title: "Guidelines for PREMIS Rights Statements"
 description: "Local guidelines for the content of PREMIS rights statements."
 pages:
-  - ["Rockefeller Archive Center Guidelines for PREMIS Rights Statements", "index"]
+  - ["Introduction", "index"]
+  - ["Guidelines", "guidelines"]
+  
