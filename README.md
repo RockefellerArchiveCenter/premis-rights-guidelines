@@ -1,4 +1,4 @@
-# Guidelines for PREMIS Rights Statments at the Rockefeller Archive Center
+# Guidelines for PREMIS Rights Statements at the Rockefeller Archive Center
 
 Local guidelines for the content of PREMIS rights statements.
 
