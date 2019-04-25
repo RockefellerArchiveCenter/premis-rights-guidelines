@@ -2,8 +2,7 @@ public: true
 type: "docs"
 category: "preservation"
 tags:
-  - "digital preservation"
-  - "rights"
+  - "policy"
 title: "Guidelines for PREMIS Rights Statements"
 description: "Local guidelines for the content of PREMIS rights statements."
 pages:
