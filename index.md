@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Rockefeller Archive Center PREMIS Rights Statements Guidelines"
+title:  "PREMIS Rights Statements Guidelines"
 ---
 
 ## Introduction
