@@ -29,5 +29,4 @@ a more structured and limited field in order to both simplify the metadata entry
 
 [^1]: Library of Congress and PREMIS Editorial Committee, “PREMIS Data Dictionary for Preservation Metadata, Version 3.0 (Library of Congress).”
 
-[^2]: Evelyn McLellan, "Implementing Rights Metadata for Digital Preservation," in *Digital Preservation Metadata for Practitioners*.
-    New York, NY: Springer Berlin Heidelberg, 2016.
+[^2]: Evelyn McLellan, "Implementing Rights Metadata for Digital Preservation," in *Digital Preservation Metadata for Practitioners*. New York, NY: Springer Berlin Heidelberg, 2016.
