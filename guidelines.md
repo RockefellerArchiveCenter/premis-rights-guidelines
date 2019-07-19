@@ -5,8 +5,16 @@ title:  "PREMIS Implementation at the RAC"
 
 Historically, there have been two types of rights bases applied to objects ingested into the digital preservation system at the RAC: those governing access (the Donor or Policy types of Other) and those governing use (Copyright). In the RAC’s implementation of PREMIS going forward:
 
--   All digital objects ingested into the digital preservation system must have copyright information expressed in PREMIS. This includes cases where the copyright status is unknown or when the object is in the public domain.
+-   All digital objects ingested into the digital preservation system must have copyright information expressed in PREMIS. This includes cases where the copyright status is unknown or when the object is in the public domain. 
 -   All digital objects ingested into the digital preservation system must have a PREMIS rights statement detailing any conditions which govern access to the object. Ideally, the rights basis for this PREMIS entity is Donor, and contains information from a donor agreement. If there is no donor agreement governing the digital object, the rights basis Policy must be used. Additionally, the rights basis Policy should be used in addition to the rights basis Donor if a RAC Policy places restrictions on the object beyond what is outlined in a donor agreement.
+
+An act should be only used if there is a restriction on the dissemination or publication of the digital objects. The default assumption of the RAC's systems is that restrictions are explicitly documented, but permissions are assumed. Additionally, rights bases will be evaluated by the RAC's systems in the following order of priority:
+
+1. Policy
+2. Donor
+3. Copyright
+
+The rights bases Statute, License, and Other (where Other is not defines as Policy or Donor) are evaluated last, and are currently not actively used at the RAC. The above order flows from the assumption that permissions are assumed. For example, a restriction on a of "disallow" from a Policy basis would supersede a restriction of "conditional" from a Copyright basi., 
 
 Below is detailed information about each semantic unit in the PREMIS Rights entity. It includes the description provided by the *Data Dictionary*, as well as notes on value constraints as defined by the *Data Dictionary*, and, where applicable, Archivematica and local policy.
 
