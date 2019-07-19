@@ -35,10 +35,7 @@ While corresponding information about the donor agreement or policy may be relev
 -   *disseminate:* object is open for research, and associated metadata is available in discovery system
 -   *publish:* create a copy or version for use outside the preservation repository
 
-Above values are used in the Archivematica/ArchivesSpace DIP Upload integration and definitions are local. In past practice at the RAC, a permission/restriction flowing from Copyright with the Act "publish"
-related to whether the RAC could publish the digital object online,
-and a permission/restriction flowing from Donor or Policy with the Act
-"disseminate" related to whether the RAC could provide any access to the digital object. Note that the *PREMIS Data Dictionary* suggests the following values and corresponding definitions, which are *not* in use at the RAC:
+Above values are used in the Archivematica/ArchivesSpace DIP Upload integration and definitions are local. In past practice at the RAC, a permission/restriction flowing from Copyright with the Act "publish" related to whether the RAC could publish the digital object online, and a permission/restriction flowing from Donor or Policy with the Act "disseminate" related to whether the RAC could provide any access to the digital object. Note that the *PREMIS Data Dictionary* suggests the following values and corresponding definitions, which are *not* in use at the RAC:
 
 -   replicate: make an exact copy
 -   migrate: make a copy identical in content in a different file format
@@ -63,15 +60,13 @@ Above values are defined and enforced by Archivematica. Note: If the user select
 
 **PREMIS Rule:** The time period for the permissions or restriction granted.
 
-**Local Rule:** The start date is generally the same date as the beginning of the rights basis which this act is connected to, and/or the accession (born digital) or creation (digitized) date of the digital object. The end date is when the specified act expires. This may be unknown (i.e., blank) or open. For digitized materials,
-permissions/restrictions apply to the digital object, not the original material. Therefore, start dates should not be before the creation of the digital object.
+**Local Rule:** The start date is generally the same date as the beginning of the rights basis which this act is connected to, and/or the accession (born digital) or creation (digitized) date of the digital object. The end date is when the specified act expires. This may be unknown (i.e., blank) or open. For digitized materials, permissions/restrictions apply to the digital object, not the original material. Therefore, start dates should not be before the creation of the digital object.
 
 ### Grant/Restriction Note (rightsGrantedNote)
 
 **PREMIS Rule:** Additional information about the permissions or restrictions granted if a textual description is needed for further explanation. This semantic unit may include a statement about risk assessment, for example, when a repository is not certain about what permissions have been granted.
 
-**Local Rule:** This note must be used if restriction is
-"conditional." If the restriction is "allow" or "disallow," the note should only be used for more explanation on the act (e.g., a statement about risk assessment). This note should not be purely duplicative of the machine-readable portions of the semantic unit (e.g., "Open without restrictions" or "Closed until 2025"). Additionally, this note should not contain information about permissions/restrictions that have expired, especially if this information is included in the rights basis note (e.g., "The twenty-year embargo has expired for these materials").
+**Local Rule:** This note must be used if restriction is "conditional." If the restriction is "allow" or "disallow," the note should only be used for more explanation on the act (e.g., a statement about risk assessment). This note should not be purely duplicative of the machine-readable portions of the semantic unit (e.g., "Open without restrictions" or "Closed until 2025"). Additionally, this note should not contain information about permissions/restrictions that have expired, especially if this information is included in the rights basis note (e.g., "The twenty-year embargo has expired for these materials").
 
 ## Basis: Copyright (copyrightInformation)
 
@@ -107,8 +102,7 @@ The US would be the value for all current RAC use cases.
 
 **PREMIS Rule:** Additional information about the copyright status of the object.
 
-**Local Rule:** Include more information about the copyright status
-(e.g., whether the work was published or unpublished) and information about copyright included in the donor agreement. For example:
+**Local Rule:** Include more information about the copyright status (e.g., whether the work was published or unpublished) and information about copyright included in the donor agreement. For example:
 
 *Work for hire - copyright term 120 years from date of creation. Copyright held by the Rockefeller Foundation.*
 
@@ -123,8 +117,7 @@ The US would be the value for all current RAC use cases.
 **PREMIS Rule:** The date range during which the particular copyright applies or is applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in *rightsGranted* and may differ from the period of time the license,
 statute, or other basis applies to the content.
 
-**Local Rule:** When copyright status is "copyrighted," or "unknown,"
-the start date is the creation date of the content (i.e., the creation date of the original item in the case of digitized material). When copyright status is "copyrighted," the end date is the date that copyright expires. If an item is in the public domain because copyright expired before ingest into the repository, record the date that it passed into the public domain. If an item is in the public domain at the time of its creation, record the date of creation for the item.
+**Local Rule:** When copyright status is "copyrighted," or "unknown," the start date is the creation date of the content (i.e., the creation date of the original item in the case of digitized material). When copyright status is "copyrighted," the end date is the date that copyright expires. If an item is in the public domain because copyright expired before ingest into the repository, record the date that it passed into the public domain. If an item is in the public domain at the time of its creation, record the date of creation for the item.
 
 ## Basis: Donor (otherRightsInformation)
 
@@ -136,8 +129,7 @@ the start date is the creation date of the content (i.e., the creation date of t
 
 ### Donor Agreement Applicable Dates (otherRightsApplicableDates)
 
-**PREMIS Rule:** The date range during which the particular rights applies or applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in *rightsGranted* and may differ from the period of time the license,
-statute or other basis applies to the content.
+**PREMIS Rule:** The date range during which the particular rights applies or applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in *rightsGranted* and may differ from the period of time the license, statute or other basis applies to the content.
 
 **Local Rule:** Record the start date of the donor agreement. Generally, RAC donor agreements apply in perpetuity; in these cases the end date should be recorded as "open." Otherwise, record the end date specified in the agreement.
 
@@ -157,8 +149,7 @@ statute or other basis applies to the content.
 
 ### Policy Applicable Dates (otherRightsApplicableDates)
 
-**PREMIS Rule:** The date range during which the particular rights applies or applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in rightsGranted and may differ from the period of time the license,
-statute or other basis applies to the content.
+**PREMIS Rule:** The date range during which the particular rights applies or applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in rightsGranted and may differ from the period of time the license, statute or other basis applies to the content.
 
 **Local Rule**: Policy start date should be the date the policy was enacted. If unknown, use 1974, the year the RAC was founded. Policy end date is when the policy itself ends, not its application to the content (that is recorded in the associated act); therefore, the end date is "open" in most cases.
 
@@ -168,8 +159,7 @@ statute or other basis applies to the content.
 
 **Local Rule**: Include information about the policy that applies to the object. For example:
 
-*Personnel files (and/or personnel-like records) are restricted to ensure personal privacy and restrict access to materials generally considered confidential between an individual and his or her employer. Personnel records include: employment applications, resumes/CVs,
-letters of appointment, personal references, salary or withholding statements, performance evaluations, and other correspondence discussing general or particular circumstances of an individual’s employment or job performance. Personnel records also often include personal injury and/or workers compensation insurance records or claims and pension documents. Records gathered in the course of conducting an executive search, or in filling a professional position,
+*Personnel files (and/or personnel-like records) are restricted to ensure personal privacy and restrict access to materials generally considered confidential between an individual and his or her employer. Personnel records include: employment applications, resumes/CVs, letters of appointment, personal references, salary or withholding statements, performance evaluations, and other correspondence discussing general or particular circumstances of an individual’s employment or job performance. Personnel records also often include personal injury and/or workers compensation insurance records or claims and pension documents. Records gathered in the course of conducting an executive search, or in filling a professional position,
 may also be restricted. *
 
 ## Basis: License (licenseInformation)
@@ -186,8 +176,7 @@ may also be restricted. *
 
 ### License Note (licenseNote)
 
-**PREMIS Rule:** Additional information about the license. Information about the terms of the license should go in *licenseTerms*.
-*licenseNotes* is intended for other types of information related to the license, such as contact persons, action dates, or interpretations. The note may also indicate the location of the license, for example, if it is available online or embedded in the object itself.
+**PREMIS Rule:** Additional information about the license. Information about the terms of the license should go in *licenseTerms*. *licenseNotes* is intended for other types of information related to the license, such as contact persons, action dates, or interpretations. The note may also indicate the location of the license, for example, if it is available online or embedded in the object itself.
 
 ### License Applicable Dates (licenseApplicableDates)
 
@@ -213,8 +202,7 @@ may also be restricted. *
 
 **PREMIS Rule:** Additional information about the statute.
 
-**Local Rule:** If necessary, this should contain information not recorded elsewhere in the basis or associated act about the statue's applicability to the content. If including text of the statute itself,
-or other external text, link to it using *statuteDocumentationIdentifier*.
+**Local Rule:** If necessary, this should contain information not recorded elsewhere in the basis or associated act about the statue's applicability to the content. If including text of the statute itself, or other external text, link to it using *statuteDocumentationIdentifier*.
 
 ### Statute Documentation Identifier (statuteDocumentationIdentifier)
 
