@@ -14,7 +14,9 @@ An act should be only used if there is a restriction on the dissemination or pub
 2. Donor
 3. Copyright
 
-The rights bases Statute, License, and Other (where Other is not defines as Policy or Donor) are evaluated last, and are currently not actively used at the RAC. The above order flows from the assumption that permissions are assumed. For example, a restriction on a of "disallow" from a Policy basis would supersede a restriction of "conditional" from a Copyright basi., 
+The rights bases Statute, License, and Other (where Other is not defined as Policy or Donor) are evaluated last, and are currently not in active use at the RAC. 
+
+The above order allows the RAC to selectively implement documented policy decisions which provide additional restrictions not articulated in donor agreements. For example, a restriction of "disallow" from a Policy basis would supersede a restriction of "conditional" from a Copyright basis. 
 
 Below is detailed information about each semantic unit in the PREMIS Rights entity. It includes the description provided by the *Data Dictionary*, as well as notes on value constraints as defined by the *Data Dictionary*, and, where applicable, Archivematica and local policy.
 
