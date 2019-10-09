@@ -121,26 +121,6 @@ statute, or other basis applies to the content.
 
 **Local Rule:** When copyright status is "copyrighted," or "unknown," the start date is the creation date of the content (i.e., the creation date of the original item in the case of digitized material). When copyright status is "copyrighted," the end date is the date that copyright expires. If an item is in the public domain because copyright expired before ingest into the repository, record the date that it passed into the public domain. If an item is in the public domain at the time of its creation, record the date of creation for the item.
 
-## Basis: Donor (otherRightsInformation)
-
-### Donor Documentation Identifier (otherRightsDocumentationIdentifier)
-
-**PREMIS Rule:** A designation used to uniquely identify documentation supporting the specified Rights within the repository system, when the basis for these Rights is something other than copyright, license or statute.
-
-**Local Rule:** As the RAC does not currently use identifiers for donor agreements or internal policies, this semantic unit is not used at this time. This may change in the future. (Note that this element is a container, and sub-elements within it have been omitted as we are not using them currently.)
-
-### Donor Agreement Applicable Dates (otherRightsApplicableDates)
-
-**PREMIS Rule:** The date range during which the particular rights applies or applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in *rightsGranted* and may differ from the period of time the license, statute or other basis applies to the content.
-
-**Local Rule:** Record the start date of the donor agreement. Generally, RAC donor agreements apply in perpetuity; in these cases the end date should be recorded as "open." Otherwise, record the end date specified in the agreement.
-
-### Donor Agreement Note (otherRightsNote)
-
-**PREMIS Rule:** Additional information about the rights of the object.
-
-**Local Rule:** Include the portion(s) of the donor agreement that pertain to access and use of the object. If restrictions apply to a certain type of record covered by this rights statement (e.g., board meeting minutes are restricted for 10 years), include this information.
-
 ## Basis: Policy (otherRightsInformation)
 
 ### Policy Documentation Identifier (otherRightsDocumentationIdentifier)
@@ -163,6 +143,26 @@ statute, or other basis applies to the content.
 
 *Personnel files (and/or personnel-like records) are restricted to ensure personal privacy and restrict access to materials generally considered confidential between an individual and his or her employer. Personnel records include: employment applications, resumes/CVs, letters of appointment, personal references, salary or withholding statements, performance evaluations, and other correspondence discussing general or particular circumstances of an individual’s employment or job performance. Personnel records also often include personal injury and/or workers compensation insurance records or claims and pension documents. Records gathered in the course of conducting an executive search, or in filling a professional position,
 may also be restricted. *
+
+## Basis: Donor (otherRightsInformation)
+
+### Donor Documentation Identifier (otherRightsDocumentationIdentifier)
+
+**PREMIS Rule:** A designation used to uniquely identify documentation supporting the specified Rights within the repository system, when the basis for these Rights is something other than copyright, license or statute.
+
+**Local Rule:** As the RAC does not currently use identifiers for donor agreements or internal policies, this semantic unit is not used at this time. This may change in the future. (Note that this element is a container, and sub-elements within it have been omitted as we are not using them currently.)
+
+### Donor Agreement Applicable Dates (otherRightsApplicableDates)
+
+**PREMIS Rule:** The date range during which the particular rights applies or applied to the content. This is distinct from *termOfGrant*, which applies to a particular act expressed in *rightsGranted* and may differ from the period of time the license, statute or other basis applies to the content.
+
+**Local Rule:** Record the start date of the donor agreement. Generally, RAC donor agreements apply in perpetuity; in these cases the end date should be recorded as "open." Otherwise, record the end date specified in the agreement.
+
+### Donor Agreement Note (otherRightsNote)
+
+**PREMIS Rule:** Additional information about the rights of the object.
+
+**Local Rule:** Include the portion(s) of the donor agreement that pertain to access and use of the object. If restrictions apply to a certain type of record covered by this rights statement (e.g., board meeting minutes are restricted for 10 years), include this information.
 
 ## Basis: License (licenseInformation)
 
