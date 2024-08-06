@@ -1,9 +1,6 @@
 public: true
 type: "docs"
-category: "preservation"
-tags:
-  - "policy"
-title: "Guidelines for PREMIS Rights Statements"
+title: "PREMIS Rights Statements Guidelines"
 description: "Local guidelines for the content of PREMIS rights statements."
 pages:
   - ["Introduction", "index"]
